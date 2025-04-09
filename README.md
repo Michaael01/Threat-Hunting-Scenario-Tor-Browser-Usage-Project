@@ -29,7 +29,7 @@ Searched for any file that had the string "tor" in it and discovered what looks 
 
 | Query used to locate events:                                                                                                                                        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeviceFileEvents <br>\| where DeviceName == "threat-hunt-lab"<br>\| where InitiatingProcessAccountName == "employee"<br>\| where FileName contains "tor"<br>\| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)<br>\| order by Timestamp desc<br>\| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
+| DeviceFileEvents <br>\| where DeviceName == "michaelvm-range"<br>\| where InitiatingProcessAccountName == "employee"<br>\| where FileName contains "tor"<br>\| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)<br>\| order by Timestamp desc<br>\| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 
 ![image](https://github.com/user-attachments/assets/4829f7b0-8893-40da-a94b-1af1a1b737d8)
 
