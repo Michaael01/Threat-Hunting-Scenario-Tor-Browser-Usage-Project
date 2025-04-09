@@ -102,7 +102,7 @@ Searched for any indication the TOR browser was used to establish a connection u
 - Timestamp: 2025-04-09T03:50:33.2169118Z
 - Event: The user "oluwatosin" created a file named tor-shopping-list.txt on the desktop, potentially indicating a list or notes related to their TOR browser activities.
 - Action: File creation detected.
-- File Path: C:\Users\employee\Desktop\tor-shopping-list.txt
+- File Path: C:\Users\oluwatosin\Desktop\tor-shopping-list.txt
 
   ![image](https://github.com/user-attachments/assets/ed4686bf-9e22-406b-88f4-54742463f298)
 
