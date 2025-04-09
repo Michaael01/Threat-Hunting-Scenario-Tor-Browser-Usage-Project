@@ -39,7 +39,7 @@ Searched for any ProcessCommandLine that contained the string "tor-browser-windo
 
 | Query used to locate events:                                                                                                                                        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeviceProcessEvents <br>\| where DeviceName == "threat-hunt-lab"<br>\| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe" <br>\| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
+| DeviceProcessEvents <br>\| where DeviceName == "michaelvm-range"<br>\| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe" <br>\| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 
 ![image](https://github.com/user-attachments/assets/d36226b7-86c0-4503-90d3-27595e2c4485)
 
