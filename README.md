@@ -24,12 +24,12 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 # Steps Taken
 
 ## 1. Searched the DeviceFileEvents Table
-Searched for any file that had the string "tor" in it and discovered what looks like the user "employee" downloaded a TOR installer, did something that resulted in many TOR-related files being copied to the desktop, and the creation of a file called tor-shopping-list.txt on the desktop at 2024-11-08T22:27:19.7259964Z. These events began at 2024-11-08T22:14:48.6065231Z.
+Searched for any file that had the string "tor" in it and discovered what looks like the user "employee" downloaded a TOR installer, did something that resulted in many TOR-related files being copied to the desktop, and the creation of a file called tor-shopping-list.txt on the desktop at 2024-11-08T22:27:19.7259964Z. These events began at 2025-04-09T03:30:48.6234216Z.
 
 
 | Query used to locate events:                                                                                                                                        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeviceFileEvents <br>\| where DeviceName == "michaelvm-range"<br>\| where InitiatingProcessAccountName == "employee"<br>\| where FileName contains "tor"<br>\| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)<br>\| order by Timestamp desc<br>\| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
+| DeviceFileEvents <br>\| where DeviceName == "michaelvm-range"<br>\| where InitiatingProcessAccountName == "employee"<br>\| where FileName contains "tor"<br>\| where Timestamp >= datetime(2025-04-09T03:30:48.6234216Z)<br>\| order by Timestamp desc<br>\| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 
 ![image](https://github.com/user-attachments/assets/4829f7b0-8893-40da-a94b-1af1a1b737d8)
 
